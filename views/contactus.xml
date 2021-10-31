@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+<!-- no se puede aplicar un xpath replece desde la reiz, se debe acudir a cada vista individual -->
+		<record model="ir.ui.view" id="THH_email_tx">
+			<field name="name">Template Header Hamburger (oe_structure_header_hamburger_3) TX</field>
+			<field name="inherit_id" ref="website.template_header_hamburger_oe_structure_header_hamburger_3"/>
+			<field name="arch" type="xml">
+				 <xpath expr="//a[@href='mailto:info@yourcompany.example.com']" position="replace">
+					<a
+						t-attf-href="mailto:#{res_company.email}"
+						t-field="res_company.email"
+					/>
+
+				</xpath> 
+				 <xpath expr="//a[@href='tel:+1 (650) 691-3277']" position="replace">
+					<a href="tel:+525540748723">+525540748723</a>
+				</xpath> 
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="THV_email_tx">
+			<field name="name">Template Header Vertical (oe_structure_header_vertical_2) TX</field>
+			<field name="inherit_id" ref="website.template_header_vertical_oe_structure_header_vertical_2"/>
+			<field name="arch" type="xml">
+				 <xpath expr="//a[@href='tel:+1 (650) 691-3277']" position="replace">
+					<a href="tel:+525540748723">+525540748723</a>
+				</xpath> 
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="THS_email_tx">
+			<field name="name">Template Header Sidebar (oe_structure_header_sidebar_1) TX</field>
+			<field name="inherit_id" ref="website.template_header_sidebar_oe_structure_header_sidebar_1"/>
+			<field name="arch" type="xml">
+				 <xpath expr="//a[@href='mailto:info@yourcompany.example.com']" position="replace">
+					<a
+						t-attf-href="mailto:#{res_company.email}"
+						t-field="res_company.email"
+					/>
+
+				</xpath> 
+				 <xpath expr="//a[@href='tel:+1 (650) 691-3277']" position="replace">
+					<a href="tel:+525540748723">+525540748723</a>
+				</xpath> 
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="THC_email_tx">
+			<field name="name">Template Header Contact (oe_structure_header_contact_1) TX</field>
+			<field name="inherit_id" ref="website.template_header_contact_oe_structure_header_contact_1"/>
+			<field name="arch" type="xml">
+				 <xpath expr="//a[@href='mailto:info@yourcompany.example.com']" position="replace">
+					<a
+						t-attf-href="mailto:#{res_company.email}"
+						t-field="res_company.email"
+					/>
+
+				</xpath> 
+				 <xpath expr="//a[@href='tel:+1 (650) 691-3277']" position="replace">
+					<a href="tel:+525540748723">+525540748723</a>
+				</xpath> 
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="THM_email_tx">
+			<field name="name">Template Header Magazine (oe_structure_header_magazine_1) TX</field>
+			<field name="inherit_id" ref="website.template_header_magazine_oe_structure_header_magazine_1"/>
+			<field name="arch" type="xml">
+				 <xpath expr="//a[@href='mailto:info@yourcompany.example.com']" position="replace">
+					<a
+						t-attf-href="mailto:#{res_company.email}"
+						t-field="res_company.email"
+					/>
+
+				</xpath> 
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="Tdefault_email_tx">
+			<field name="name">Default TX</field>
+			<field name="inherit_id" ref="website.footer_custom"/>
+			<field name="arch" type="xml">
+				 <xpath expr="//a[@href='mailto:info@yourcompany.example.com']" position="replace">
+					<a
+						t-attf-href="mailto:#{res_company.email}"
+						t-field="res_company.email"
+					/>
+
+				</xpath> 
+				 <xpath expr="//a[@href='tel:+1 (650) 691-3277']" position="replace">
+					<a href="tel:+525540748723">+525540748723</a>
+				</xpath> 
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="Tdescriptive_email_tx">
+			<field name="name">Descriptive TX</field>
+			<field name="inherit_id" ref="website.template_footer_descriptive"/>
+			<field name="arch" type="xml">
+				 <xpath expr="//a[@href='mailto:hello@mycompany.com']" position="replace">
+					<a
+						t-attf-href="mailto:#{res_company.email}"
+						t-field="res_company.email"
+					/>
+
+				</xpath> 
+				 <xpath expr="//a[@href='tel:+1 (650) 691-3277']" position="replace">
+					<a href="tel:+525540748723">+525540748723</a>
+				</xpath> 
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="Tcentered_email_tx">
+			<field name="name">Centered TX</field>
+			<field name="inherit_id" ref="website.template_footer_centered"/>
+			<field name="arch" type="xml">
+				 <xpath expr="//a[@href='mailto:info@yourcompany.example.com']" position="replace">
+					<a
+						t-attf-href="mailto:#{res_company.email}"
+						t-field="res_company.email"
+					/>
+
+				</xpath> 
+				 <xpath expr="//a[@href='tel:+1 (650) 691-3277']" position="replace">
+					<a href="tel:+525540748723">+525540748723</a>
+				</xpath> 
+				 <xpath expr="//a[@href='tel:1 (650) 691-3277']" position="replace">
+					<a href="tel:+525540748723">+525540748723</a>
+				</xpath> 
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="TL_email_tx">
+			<field name="name">Links TX</field>
+			<field name="inherit_id" ref="website.template_footer_links"/>
+			<field name="arch" type="xml">
+				 <xpath expr="//a[@href='tel:1 (650) 691-3277']" position="replace">
+					<a href="tel:+525540748723">+525540748723</a>
+				</xpath> 
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="C_email_tx">
+			<field name="name">Contact TX</field>
+			<field name="inherit_id" ref="website.template_footer_contact"/>
+			<field name="arch" type="xml">
+				 <xpath expr="//a[@href='mailto:hello@mycompany.com']" position="replace">
+					<a
+						t-attf-href="mailto:#{res_company.email}"
+						t-field="res_company.email"
+					/>
+
+				</xpath> 
+				 <xpath expr="//a[@href='tel:+1 (650) 691-3277']" position="replace">
+					<a href="tel:+525540748723">+525540748723</a>
+				</xpath> 
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="CTA_email_tx">
+			<field name="name">Call-to-Action TX</field>
+			<field name="inherit_id" ref="website.template_footer_call_to_action"/>
+			<field name="arch" type="xml">
+				 <xpath expr="//a[@href='mailto:info@yourcompany.example.com']" position="replace">
+					<a
+						t-attf-href="mailto:#{res_company.email}"
+						t-field="res_company.email"
+					/>
+
+				</xpath> 
+			</field>
+		</record>
+
+		<record model="ir.ui.view" id="TH_email_tx">
+			<field name="name">Headline TX</field>
+			<field name="inherit_id" ref="website.template_footer_headline"/>
+			<field name="arch" type="xml">
+				 <xpath expr="//a[@href='mailto:info@yourcompany.example.com']" position="replace">
+					<a
+						t-attf-href="mailto:#{res_company.email}"
+						t-field="res_company.email"
+					/>
+
+				</xpath> 
+				 <xpath expr="//a[@href='tel:+1 (650) 691-3277']" position="replace">
+					<a href="tel:+525540748723">+525540748723</a>
+				</xpath> 
+			</field>
+		</record>
+
+	</data>
+</odoo>

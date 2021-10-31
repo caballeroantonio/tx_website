@@ -1,0 +1,28 @@
+#What Do:
+Replaces:
+	- mailto:info@yourcompany.example.com
+	- tel:+1 (650) 691-3277
+	- tel:1 (650) 691-3277
+#ToDo
+Replaces:
+	- href="#"
+	- href="/website/social/facebook"
+	- href="/website/social/twitter"
+	- href="/website/social/linkedin"
+	- href="/website/social/instagram"
+	- href="/website/social/github"
+	- href="/website/social/youtube"
+
+- Intentar el reemplazo en sólo en los atributos conflictivos, usando por ejemplo
+	<xpath expr="." position="attributes">
+		<attribute name="t-name">web.frontend_layout</attribute>
+	</xpath>
+
+<t t-if="company.email"> |
+	<a t-att-href="'mailto:%s' % company.email" style="text-decoration:none; color: #999999;">
+		<t t-esc="company.email"/>
+	</a>
+</t>
+
+- Intentar deshabilitar
+	ir_ui_view.key=website.brand_promotion
