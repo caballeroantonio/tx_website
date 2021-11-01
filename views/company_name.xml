@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record model="ir.ui.view" id="THH_email_tx">
+			<field name="name">Frontend Layout TX</field>
+			<field name="inherit_id" ref="web.frontend_layout"/>
+			<field name="arch" type="xml">
+ <xpath expr="//span[@class='o_footer_copyright_name mr-2']" position="replace">
+	<span class="o_footer_copyright_name mr-2">
+		Copyright &amp;copy; <t t-esc="res_company.name"/>
+	</span>
+</xpath> 
+			</field>
+		</record>
+
+	</data>
+</odoo>

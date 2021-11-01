@@ -12,12 +12,16 @@ tx website
 	'website':					'http://caballeroantonio.ddns.net',
 	'category':					'Website',
 	'version':					'1.0',
-	'depends':					['base', 'website'],
+	'depends': [
+									'web',
+									'website',
+	],
 	'external_dependencies':	{'python': []},
 	'data': [
 								'security/res.groups.xml',
 								'security/ir.model.access.csv',
 								'views/contactus.xml',
+								'views/company_name.xml',								
 	],
 	'demo': [
 	],
